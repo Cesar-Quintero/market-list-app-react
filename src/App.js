@@ -60,12 +60,11 @@ return (
     
     {list.length > 0 && (
       <div className="todo">
-      <ul className="todoItems list-group">
-        <List items={list} removeItem={removeItem} />
-      </ul>
+        <ul className="todoItems list-group">
+          <List items={list} removeItem={removeItem} />
+        </ul>
       </div>
-    )
-    }
+    )}
 
     <LeftToDo leftToDo={list.length}/>
   </section>
