@@ -53,7 +53,8 @@ return (
         placeholder="e.g. eggs" 
         name="todoItem" 
         value={name}
-        onChange={(e) => setName(e.target.value)}/>
+        onChange={(e) => setName(e.target.value)}
+        required/>
         <input className="submit" type="submit" />
       </form>
     </div>
