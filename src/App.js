@@ -36,6 +36,7 @@ const removeItem = (id) => {
   setList(list.filter(item => item.id !== id))
 }
 
+// useEffect Hook
 useEffect(() => {
   localStorage.setItem('list', JSON.stringify(list))
 }, [list])
