@@ -50,13 +50,14 @@ return (
     <div>
       <form className ="form" onSubmit={handleSubmit}>
         <input 
+        data-testid="itemInput"
         type="text" 
         placeholder="e.g. eggs" 
         name="todoItem" 
         value={name}
         onChange={(e) => setName(e.target.value)}
         required/>
-        <input className="submit" type="submit" />
+        <input data-testid="submitButton" className="submit" type="submit" />
       </form>
     </div>
     
